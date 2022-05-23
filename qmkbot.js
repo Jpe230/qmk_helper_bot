@@ -232,7 +232,7 @@ bot.on('message', message => {
         cmdmsg.setTitle('SparkFun Pro Micro RP2040 Pinout');
         cmdmsg.setImage(sparkfunrp);
         channel.send(cmdmsg);
-        // channel.send({files:[rppromicro});
+        // channel.send({files:[sparkfunrp});
         break;
       case 'adafruitkb':  // send channel image of Adafruit KB2040 pinout
         cmdmsg.setTitle('Adafruit KB2040 Pinout');
