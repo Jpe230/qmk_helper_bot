@@ -7,7 +7,7 @@ require('dotenv').config();
 const token = process.env.TOKEN;
 
 // Import utils.js
-const {prefix, baseurl, msg, docsSwitch, authroles, parse, bare, firmware, toolbox, plainhelp, disclaimer, ohshitgit, git, xkcd, promicro, protonc, elitec, blackpill, bluepill, msys, coc, kbdfans, lighting, wsl, vid, vidq, automark, markdown, checkrole, sonixinvite, sonix, openrgbinvite, openrgb, vialinvite, vial, iconfrominvite, inputlanguage, standards, snip, zmk, zmkinvite, prstatus, volunteers} = require('./utils.js');
+const {prefix, baseurl, msg, docsSwitch, authroles, parse, bare, firmware, toolbox, plainhelp, disclaimer, ohshitgit, git, xkcd, promicro, protonc, elitec, blackpill, bluepill, sparkfunrp, adafruitkb, msys, coc, kbdfans, lighting, wsl, vid, vidq, automark, markdown, checkrole, sonixinvite, sonix, openrgbinvite, openrgb, vialinvite, vial, iconfrominvite, inputlanguage, standards, snip, zmk, zmkinvite, prstatus, volunteers} = require('./utils.js');
 let cooldown = require("./utils.js").cooldown;
 
 bot.on('ready', () => {
@@ -227,6 +227,18 @@ bot.on('message', message => {
         cmdmsg.setImage(bluepill);
         channel.send(cmdmsg);
         // channel.send({files:[bluepill});
+        break;
+      case 'sparkfunrp':  // send channel image of Sparkfun RP2040 pinout
+        cmdmsg.setTitle('SparkFun Pro Micro RP2040 Pinout');
+        cmdmsg.setImage(sparkfunrp);
+        channel.send(cmdmsg);
+        // channel.send({files:[rppromicro});
+        break;
+      case 'adafruitkb':  // send channel image of Adafruit KB2040 pinout
+        cmdmsg.setTitle('Adafruit KB2040 Pinout');
+        cmdmsg.setImage(adafruitkb);
+        channel.send(cmdmsg);
+        // channel.send({files:[adafruitkb});
         break;
       case 'toolbox':  // send channel link to qmk_toolbox repo
                        // channel.send(bare(toolbox));
