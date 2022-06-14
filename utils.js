@@ -177,8 +177,8 @@ module.exports = {
   elitec: 'https://i.imgur.com/WWnicKw.png',
   blackpill: 'https://i.imgur.com/nCgeolT.png',
   bluepill: 'https://i.imgur.com/mpiVwDX.jpg',
-  sparkfunrp: 'https://i.imgur.com/04TlajC.jpeg',
-  adafruitkb: 'https://i.imgur.com/cADsD1c.jpeg',
+  sparkfun2040: 'https://i.imgur.com/04TlajC.jpeg',
+  adafruit2040: 'https://i.imgur.com/cADsD1c.jpeg',
   msys: 'https://msys.qmk.fm/',
   wsl: 'https://qmk.github.io/qmk_distro_wsl/',
   coc: 'https://qmk.fm/coc/',
@@ -206,7 +206,7 @@ module.exports = {
 
   // Parser
   parse: function(string) {
-    return string.toLowerCase().substring(1).replace(/[^a-z\- ]+/g, '').split(/ +/g, 2);
+    return string.toLowerCase().substring(1).replace(/[^a-z0-9\- ]+/g, '').split(/ +/g, 2);
   },
 
   // Bare link constructor (inhibits embeds)

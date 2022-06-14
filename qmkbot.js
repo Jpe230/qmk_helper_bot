@@ -7,7 +7,7 @@ require('dotenv').config();
 const token = process.env.TOKEN;
 
 // Import utils.js
-const {prefix, baseurl, msg, docsSwitch, authroles, parse, bare, firmware, toolbox, plainhelp, disclaimer, ohshitgit, git, xkcd, promicro, protonc, elitec, blackpill, bluepill, sparkfunrp, adafruitkb, msys, coc, kbdfans, lighting, wsl, vid, vidq, automark, markdown, checkrole, sonixinvite, sonix, openrgbinvite, openrgb, vialinvite, vial, iconfrominvite, inputlanguage, standards, snip, zmk, zmkinvite, prstatus, volunteers} = require('./utils.js');
+const {prefix, baseurl, msg, docsSwitch, authroles, parse, bare, firmware, toolbox, plainhelp, disclaimer, ohshitgit, git, xkcd, promicro, protonc, elitec, blackpill, bluepill, sparkfun2040, adafruit2040, msys, coc, kbdfans, lighting, wsl, vid, vidq, automark, markdown, checkrole, sonixinvite, sonix, openrgbinvite, openrgb, vialinvite, vial, iconfrominvite, inputlanguage, standards, snip, zmk, zmkinvite, prstatus, volunteers} = require('./utils.js');
 let cooldown = require("./utils.js").cooldown;
 
 bot.on('ready', () => {
@@ -228,17 +228,17 @@ bot.on('message', message => {
         channel.send(cmdmsg);
         // channel.send({files:[bluepill});
         break;
-      case 'sparkfunrp':  // send channel image of Sparkfun RP2040 pinout
+      case 'sparkfun2040':  // send channel image of Sparkfun RP2040 pinout
         cmdmsg.setTitle('SparkFun Pro Micro RP2040 Pinout');
-        cmdmsg.setImage(sparkfunrp);
+        cmdmsg.setImage(sparkfun2040);
         channel.send(cmdmsg);
-        // channel.send({files:[sparkfunrp});
+        // channel.send({files:[sparkfun2040});
         break;
-      case 'adafruitkb':  // send channel image of Adafruit KB2040 pinout
+      case 'adafruit2040':  // send channel image of Adafruit KB2040 pinout
         cmdmsg.setTitle('Adafruit KB2040 Pinout');
-        cmdmsg.setImage(adafruitkb);
+        cmdmsg.setImage(adafruit2040);
         channel.send(cmdmsg);
-        // channel.send({files:[adafruitkb});
+        // channel.send({files:[adafruit2040});
         break;
       case 'toolbox':  // send channel link to qmk_toolbox repo
                        // channel.send(bare(toolbox));
